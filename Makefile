@@ -1,5 +1,11 @@
 # Makefile de la librairie libcms
 
+install: bin cmsint 
+	sudo cp -f -i lib/libcmsint.so /usr/lib/
+	sudo cp -f -i lib/libcmsint.so.1 /usr/lib/
+	sudo cp -f -i lib/libcmsint.so.1.0 /usr/lib/
+
+
 cmsint: bin
 	gcc -c -I include/ -fPIC -o bin/uint8_fct.o src/int/uint8_fct.c
 	gcc -c -I include/ -fPIC -o bin/uint32_fct.o src/int/uint32_fct.c
@@ -22,4 +28,4 @@ doxygen :
 clean : 
 	rm -rf build/
 	rm -f lib/libcmsint*
-
+	
