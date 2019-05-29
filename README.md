@@ -27,5 +27,5 @@ gcc -I ./libcms/include/ -L ./libcms/lib/ -o test test.c -lcmsint
 ## Contenu de la librairie
 
 **libcms** contient plusieurs paquets : 
-- **cmsint** qui permet de manipuler facilement les types *uint8_t*, *uint32_t* et *uint64_t*
+- **cmsint** qui permet de manipuler facilement les types *uint8_t*, *uint32_t* et *uint64_t* : à la compilation **-lcmsint** pour utiliser ce paquet
 - d'autres paquets pour de futures versions
